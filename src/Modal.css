@@ -1,0 +1,94 @@
+/* Modal.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #03122f;
+  z-index: 999;
+  color: black;
+  text-align: left;
+  border: 5px solid #6bd1ff;
+  border-radius: 15px;
+  overflow-y: auto;
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  /* padding: 7rem 0 6rem 0; */
+}
+
+.modal h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2271d1;
+  padding-block: 7rem 4rem;
+}
+
+div.modal form div {
+  gap: 0;
+}
+
+div.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 119vh;
+  padding-bottom: 5rem;
+}
+
+div.modal form input,
+div.modal form select,
+div.modal form textarea {
+  width: 100%;
+}
+
+div.modal form label {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+div.modal form div {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.modal form div.btn-form {
+  margin-block: 2rem;
+  width: auto;
+  display: grid;
+  align-self: center;
+  gap: 2rem;
+}
+
+div.modal form div.btn-form button {
+  border: 2px solid #2271d1;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2271d1;
+  border: 2px solid #2271d1;
+  border-radius: 10px;
+  width: 180px;
+  height: 54px;
+  box-shadow: inset 0 0 12px 4px #2271d1;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+div.modal form div.btn-form button:nth-child(2) {
+  box-shadow: none;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+div.modal form div:nth-child(5) label,
+div.modal form div:nth-child(2) label {
+  margin-top: 0;
+}

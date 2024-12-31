@@ -1,0 +1,7 @@
+footer {
+  width: 100%;
+  border-top: 4px solid blue;
+  text-align: center;
+  box-shadow: 0 5px 29px 0 rgba(34, 113, 209, 0.7);
+  background: rgba(0, 0, 0, 0.9);
+}

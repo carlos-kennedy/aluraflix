@@ -1,0 +1,44 @@
+{
+  "videos": [
+    {
+      "id": "8a33",
+      "title": "Outro Algo",
+      "description": "dadsaCasdsa",
+      "thumbnail": "https://via.placeholder.com/1502",
+      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "category": "Frontend"
+    },
+    {
+      "id": "e705",
+      "title": "Outlkodas",
+      "description": "dasda",
+      "thumbnail": "https://via.placeholder.com/1502",
+      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "category": "Backend"
+    },
+    {
+      "id": "bc93",
+      "title": "dasdsa",
+      "description": "sdasa",
+      "thumbnail": "https://via.placeholder.com/1502",
+      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "category": "Backend"
+    },
+    {
+      "id": "b201",
+      "title": "Inovation",
+      "description": "sadas",
+      "thumbnail": "https://images.unsplash.com/photo-1735406818183-a1162c38e6e2?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "category": "Frontend"
+    },
+    {
+      "id": "367a",
+      "title": "sdasd",
+      "description": "das",
+      "thumbnail": "https://images.unsplash.com/photo-1735406818183-a1162c38e6e2?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "videoUrl": "dsad",
+      "category": "Frontend"
+    }
+  ]
+}

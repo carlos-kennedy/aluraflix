@@ -1,0 +1,43 @@
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-block: 1.2rem;
+  background-color: black;
+  border-top: 4px solid #2271d1;
+  z-index: 100;
+}
+
+nav svg {
+  width: 2.5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.1rem;
+  list-style: none;
+}
+
+li.newVideo:nth-child(2) {
+  border: 1px solid red;
+  background: rgba(34, 113, 209, 0.24);
+  padding: 1.3rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #2271d1;
+  border-radius: 5rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+li.newVideo a {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: #2271d1;
+  text-decoration: none;
+}

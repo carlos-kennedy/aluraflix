@@ -1,50 +1,101 @@
-# React + TypeScript + Vite
+# Projeto: Gerenciador de Categorias de Vídeos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este projeto é um sistema de gerenciamento de categorias de vídeos desenvolvido com **React** e **TypeScript**. Ele permite exibir vídeos organizados por categorias, editar informações, excluir vídeos e acessar links de reprodução. O design responsivo garante uma experiência consistente em diferentes dispositivos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- **Exibição de vídeos por categorias**: Exibe os vídeos com título, descrição e miniatura.
+- **Edição de vídeos**: Possibilidade de editar os dados de um vídeo existente.
+- **Exclusão de vídeos**: Remoção de vídeos indesejados.
+- **Redirecionamento para os vídeos**: Cada vídeo possui um link clicável que leva para a página de reprodução.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React**
+- **TypeScript**
+- **CSS** (para estilização)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Estrutura de Dados
+
+Cada vídeo possui a seguinte estrutura:
+
+```typescript
+interface Video {
+  id: number;
+  title: string;
+  description: string;
+  thumbnail: string;
+  videoUrl: string;
+}
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Como Executar o Projeto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Pré-requisitos
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+- Node.js instalado
+- Gerenciador de pacotes npm ou yarn
+
+### Passos
+
+1. Clone o repositório:
+   ```bash
+   git clone <URL-do-repositório>
+   ```
+
+2. Acesse o diretório do projeto:
+   ```bash
+   cd nome-do-projeto
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+4. Execute o projeto:
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
+
+5. Acesse o projeto no navegador em `http://localhost:3000`.
+
+## Estrutura de Pastas
+
 ```
+├── src
+│   ├── components
+│   │   └── Categoria.tsx
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── styles
+│       └── Categoria.css
+└── package.json
+```
+
+## Melhorias Futuras
+
+- Adicionar autenticação para diferentes usuários.
+- Permitir upload de vídeos diretamente pelo sistema.
+- Implementar integração com um banco de dados para persistência de dados.
+- Melhorar o design da interface com frameworks como TailwindCSS ou Material-UI.
+
+## Contribuição
+
+Contribuições são bem-vindas! Siga os passos abaixo:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Faça commit das mudanças (`git commit -m 'Adicionei uma nova feature'`)
+4. Faça push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+---
+
+Desenvolvido com 💻 e ☕ por Carlos.

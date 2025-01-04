@@ -3,42 +3,58 @@
     {
       "id": "8a33",
       "title": "Outro Algo",
-      "description": "dadsaCasdsa",
-      "thumbnail": "https://via.placeholder.com/1502",
+      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
+      "thumbnail": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
       "category": "Frontend"
     },
     {
       "id": "e705",
-      "title": "Outlkodas",
-      "description": "dasda",
-      "thumbnail": "https://via.placeholder.com/1502",
+      "title": "Server",
+      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
+      "thumbnail": "https://plus.unsplash.com/premium_photo-1682146029185-198922bd8350?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
       "category": "Backend"
     },
     {
-      "id": "bc93",
-      "title": "dasdsa",
-      "description": "sdasa",
-      "thumbnail": "https://via.placeholder.com/1502",
+      "id": "efc5",
+      "title": "Algo interessante",
+      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
+      "thumbnail": "https://images.unsplash.com/photo-1599950755346-a3e58f84ca63?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "category": "Mobile"
+    },
+    {
+      "id": "2c58",
+      "title": "Inovação",
+      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
+      "thumbnail": "https://images.unsplash.com/photo-1599950755346-a3e58f84ca63?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "category": "Mobile"
+    },
+    {
+      "id": "f93b",
+      "title": "Mobile",
+      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
+      "thumbnail": "https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "videoUrl": "https://www.youtube.com/watch?v=We0y0-L5aw0",
+      "category": "Mobile"
+    },
+    {
+      "id": "dfc1",
+      "title": "rose",
+      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
+      "thumbnail": "https://plus.unsplash.com/premium_photo-1674347955758-e37fe3b224c5?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "category": "Frontend"
+    },
+    {
+      "id": "eda4",
+      "title": "Eu sei lá",
+      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
+      "thumbnail": "https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
       "category": "Backend"
-    },
-    {
-      "id": "b201",
-      "title": "Inovation",
-      "description": "sadas",
-      "thumbnail": "https://images.unsplash.com/photo-1735406818183-a1162c38e6e2?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
-      "category": "Frontend"
-    },
-    {
-      "id": "367a",
-      "title": "sdasd",
-      "description": "das",
-      "thumbnail": "https://images.unsplash.com/photo-1735406818183-a1162c38e6e2?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "dsad",
-      "category": "Frontend"
     }
   ]
 }

@@ -8,19 +8,21 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ featuredVideos }) => {
   if (featuredVideos.length === 0) {
-    return <div></div>; // Mensagem se não houver vídeos em destaque
+    return  // Mensagem se não houver vídeos em destaque
   }
 
   return (
     <div className="banner">
       {featuredVideos.map((video) => (
-        <div key={video.id} className="banner-item">
-          <img src={video.thumbnail} alt={video.title} className="banner-thumbnail" />
+        <div
+          key={video.id}
+          className="banner-item"
+           // Define a imagem de fundo
+        >
           <div className="banner-info">
+            <h2>{video.category}</h2>
             <h3>{video.title}</h3>
-            <a href={video.videoUrl} target="_blank" rel="noopener noreferrer">
-              Ver vídeo
-            </a>
+            
           </div>
         </div>
       ))}

@@ -128,7 +128,7 @@ function HomePage() {
       {/* Modal para edição de vídeo */}
      {modalOpen && currentVideo && (
   <div className="modal">
-    <h2>Editar Card</h2>
+    <h2>Editar Card:</h2>
     <form>
       <div>
 
@@ -151,8 +151,7 @@ function HomePage() {
       >
         <option value="Frontend">Frontend</option>
         <option value="Backend">Backend</option>
-        <option value="Inovação">Inovação</option>
-        <option value="Gestão">Gestão</option>
+        <option value="Mobile">Mobile</option>
       </select>
 
 </div>

@@ -112,3 +112,15 @@ form div:nth-child(3) {
 form div:nth-child(5) label {
   margin-top: 6rem;
 }
+
+@media (min-width: 700px) {
+  div.wrapper-form {
+    height: 100%;
+    padding-top: 14rem;
+    padding-bottom: 7.1rem;
+  }
+
+  div.wrapper-form p{
+    margin-bottom: 6.6rem;
+  }
+}

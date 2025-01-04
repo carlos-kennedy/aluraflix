@@ -34,9 +34,6 @@ function App() {
   // Filtra vídeos da categoria "Destaque"
   const featuredVideos = videos.filter((video) => video.isFeatured); // Certifique-se de que isFeatured está correto
 
-  // Adicione um log para verificar os vídeos em destaque
-  console.log('Vídeos em destaque:', featuredVideos); // Verifique os vídeos em destaque
-
   // Filtra vídeos recentes (por exemplo, os 5 mais recentes)
   const recentVideos = [...videos]
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
@@ -45,8 +42,8 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Navbar /> {/* Aqui você deve usar o Navbar */}
         <Header featuredVideos={featuredVideos} recentVideos={recentVideos} /> {/* Passa os vídeos em destaque e recentes para o Header */}
+        <Navbar /> 
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />

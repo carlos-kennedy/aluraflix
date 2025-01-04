@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./NovoVideo.css"
+import "./NovoVideo.css";
 
 interface Video {
   id?: number; // Torne o ID opcional
@@ -19,15 +19,35 @@ function NovoVideo() {
   const [category, setCategory] = useState('Frontend');
   const [error, setError] = useState('');
 
-  const navigate = useNavigate(); // Usando useNavigate no lugar de useHistory
+  const navigate = useNavigate();
+
+  // Função para validar se é uma URL
+  const isValidUrl = (url: string): boolean => {
+    try {
+      new URL(url); // Tenta criar um objeto URL; se falhar, não é uma URL válida
+      return true;
+    } catch {
+      return false;
+    }
+  };
 
   // Função para enviar os dados do novo vídeo via POST
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validação simples (podemos melhorar mais tarde)
+    // Validação dos campos
     if (!title || !description || !thumbnail || !videoUrl) {
       setError('Todos os campos são obrigatórios!');
+      return;
+    }
+
+    if (!isValidUrl(thumbnail)) {
+      setError('Por favor, insira um link válido para a imagem.');
+      return;
+    }
+
+    if (!isValidUrl(videoUrl)) {
+      setError('Por favor, insira um link válido para o vídeo.');
       return;
     }
 
@@ -54,7 +74,7 @@ function NovoVideo() {
       }
 
       // Redireciona para a página inicial após salvar o vídeo
-      navigate('/'); // Usando navigate para redirecionar
+      navigate('/');
     } catch (error) {
       setError('Ocorreu um erro ao salvar o vídeo.');
     }
@@ -67,7 +87,8 @@ function NovoVideo() {
       <form onSubmit={handleSave}>
         <div>
           <label htmlFor="title">Título:</label>
-          <input placeholder='titulo do vídeo'
+          <input
+            placeholder='Título do vídeo'
             type="text"
             id="title"
             value={title}
@@ -76,23 +97,23 @@ function NovoVideo() {
           />
         </div>
 
-            <div>
+        <div>
           <label htmlFor="category">Categoria:</label>
           <select
             id="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-          > 
+          >
             <option value="Frontend">Frontend</option>
             <option value="Backend">Backend</option>
-            <option value="Inovação">Inovação</option>
-            <option value="Gestão">Gestão</option>
+            <option value="Mobile">Mobile</option>
           </select>
         </div>
-    
+
         <div>
-          <label htmlFor="thumbnail">Imagem</label>
-          <input placeholder='link da imagem'
+          <label htmlFor="thumbnail">Imagem:</label>
+          <input
+            placeholder='Link da imagem'
             type="text"
             id="thumbnail"
             value={thumbnail}
@@ -102,8 +123,9 @@ function NovoVideo() {
         </div>
 
         <div>
-          <label htmlFor="videoUrl">Vídeo</label>
-          <input placeholder='link do vídeo'
+          <label htmlFor="videoUrl">Vídeo:</label>
+          <input
+            placeholder='Link do vídeo'
             type="text"
             id="videoUrl"
             value={videoUrl}
@@ -112,9 +134,10 @@ function NovoVideo() {
           />
         </div>
 
-          <div>
+        <div>
           <label htmlFor="description">Descrição:</label>
-          <textarea placeholder='Do que se trata o vídeo?'
+          <textarea
+            placeholder='Do que se trata o vídeo?'
             id="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}

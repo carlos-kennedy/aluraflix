@@ -92,3 +92,26 @@ div.modal form div:nth-child(5) label,
 div.modal form div:nth-child(2) label {
   margin-top: 0;
 }
+
+@media (min-width: 700px) {
+  .modal {
+    left: 20dvw;
+    width: 60dvw;
+    padding-inline: 14rem;
+  }
+
+  div.modal form {
+    height: auto;
+    padding: 0;
+  }
+  .modal h2 {
+    text-align: left;
+    padding-block: 4rem 4rem;
+  }
+  .modal form div.btn-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -27,22 +27,21 @@ div.videos-container {
   height: 42.9rem;
   width: 100%;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 9rem;
 }
 
-
 div.video-card {
-  width: 37.3rem;
-  height: 26rem;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
 }
 
 div.video-card img {
-  border: 4px solid #6bd1ff;
   border-radius: 4px 4px 0 0;
   width: 25rem;
   height: 25rem;
-  box-shadow: inset 0 0 1.7rem 8px #6bd1ff;
+  object-fit: cover;
 }
 
 div.video-options {
@@ -51,10 +50,78 @@ div.video-options {
   justify-content: space-around;
   padding-block: 1.5rem;
   width: 25rem;
+  transform: translateY(-2px);
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+section.categoria:nth-child(1) div.video-card img {
+  border: 4px solid #6bd1ff;
+}
+section.categoria:nth-child(2) div.video-card img {
+  border: 4px solid #00c86f;
+}
+section.categoria:nth-child(3) div.video-card img {
+  border: 4px solid #ffba05;
+}
+section.categoria:nth-child(1) div.video-card a::before {
+  content: "";
+  width: 25rem;
+  height: 25rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+  box-shadow: inset 0 0 1.7rem 8px #6bd1ff;
+}
+
+section.categoria:nth-child(2) div.video-card a::before {
+  content: "";
+  width: 25rem;
+  height: 25rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+  box-shadow: inset 0 0 1.7rem 8px #00c86f;
+}
+section.categoria:nth-child(3) div.video-card a::before {
+  content: "";
+  width: 25rem;
+  height: 25rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+  box-shadow: inset 0 0 1.7rem 8px #ffba05;
+}
+
+section.categoria a:after {
+  content: "";
+  position: absolute;
+  background: url("../assets/youtube.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+  left: 12rem;
+  bottom: 11rem;
+  z-index: 1;
+}
+
+section.categoria:nth-child(1) div.video-options {
   border-bottom: 5px solid #6bd1ff;
   border-left: 5px solid #6bd1ff;
   border-right: 5px solid #6bd1ff;
-  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: inset 0 0 1.5rem 3px #6bd1ff;
+}
+section.categoria:nth-child(2) div.video-options {
+  border-bottom: 5px solid #00c86f;
+  border-left: 5px solid #00c86f;
+  border-right: 5px solid #00c86f;
+  box-shadow: inset 0 0 1.5rem 3px #00c86f;
+}
+section.categoria:nth-child(3) div.video-options {
+  border-bottom: 5px solid #ffba05;
+  border-left: 5px solid #ffba05;
+  border-right: 5px solid #ffba05;
+  box-shadow: inset 0 0 1.5rem 3px #ffba05;
 }
 
 div.video-options button {

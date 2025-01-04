@@ -1,4 +1,3 @@
-/* Modal.css */
 .modal {
   position: fixed;
   top: 0;
@@ -14,7 +13,6 @@
   overflow-y: auto;
   padding-inline: 1rem;
   padding-block: 2rem;
-  /* padding: 7rem 0 6rem 0; */
 }
 
 .modal h2 {
@@ -54,6 +52,7 @@ div.modal form div {
   margin-bottom: 1rem;
   width: 100%;
 }
+
 .modal form div.btn-form {
   margin-block: 2rem;
   width: auto;
@@ -104,10 +103,12 @@ div.modal form div:nth-child(2) label {
     height: auto;
     padding: 0;
   }
+
   .modal h2 {
     text-align: left;
     padding-block: 4rem 4rem;
   }
+
   .modal form div.btn-form {
     display: flex;
     width: 100%;

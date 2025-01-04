@@ -7,6 +7,7 @@
 :root {
   font-size: 62.4%;
 }
+
 button {
   cursor: pointer;
 }
@@ -16,16 +17,14 @@ button {
   height: 1rem;
 }
 
-/* Estilo do polegar da barra (a parte que se move) */
 ::-webkit-scrollbar-thumb {
-  background-color: #2271d1; /* Cor do polegar */
+  background-color: #2271d1;
   padding: 2rem;
-  border-radius: 6px; /* Borda arredondada */
+  border-radius: 6px;
 }
 
-/* Estilo do track (a trilha da barra) */
 ::-webkit-scrollbar-track {
   background: rgba(34, 113, 209, 0.17);
   padding: 2rem;
-  border-radius: 6px; /* Borda arredondada */
+  border-radius: 6px;
 }

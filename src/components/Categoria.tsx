@@ -5,7 +5,7 @@ interface Video {
   title: string;
   description: string;
   thumbnail: string;
-  videoUrl: string;  // Adicionando a propriedade videoUrl
+  videoUrl: string;
 }
 
 interface CategoriaProps {
@@ -22,10 +22,9 @@ function Categoria({ titulo, videos, onEdit, onDelete }: CategoriaProps) {
       <div className="videos-container">
         {videos.map((video) => (
           <div className="video-card" key={video.id}>
-            <a href={video.videoUrl} target="_blank" rel="noopener noreferrer">  {/* Link para o vídeo */}
+            <a href={video.videoUrl} target="_blank" rel="noopener noreferrer">
               <img src={video.thumbnail} alt={video.title} />
             </a>
-
             <div className="video-options">
               <button onClick={() => onDelete(video.id, titulo)}>
                 <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +32,6 @@ function Categoria({ titulo, videos, onEdit, onDelete }: CategoriaProps) {
                 </svg>
                 Excluir
               </button>
-
               <button onClick={() => onEdit(video.id, titulo)}>
                 <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2.87839 27.9956C2.178 27.9956 1.57844 27.7462 1.07968 27.2475C0.580921 26.7487 0.331543 26.1491 0.331543 25.4488C0.331543 24.7484 0.580921 24.1488 1.07968 23.6501C1.57844 23.1513 2.178 22.9019 2.87839 22.9019H23.2531C23.9535 22.9019 24.5531 23.1513 25.0518 23.6501C25.5506 24.1488 25.8 24.7484 25.8 25.4488C25.8 26.1491 25.5506 26.7487 25.0518 27.2475C24.5531 27.7462 23.9535 27.9956 23.2531 27.9956H2.87839ZM4.15181 20.3551C3.79101 20.3551 3.48857 20.233 3.2445 19.989C3.00042 19.7449 2.87839 19.4425 2.87839 19.0817V16.1209C2.87839 15.9512 2.91022 15.7867 2.97389 15.6275C3.03756 15.4683 3.13307 15.3251 3.26041 15.1977L14.4029 4.05527L19.1782 8.83061L8.03574 19.973C7.9084 20.1004 7.76514 20.1959 7.60597 20.2596C7.44679 20.3232 7.2823 20.3551 7.11251 20.3551H4.15181ZM5.42523 17.8082H6.57131L15.6126 8.83061L14.4029 7.62086L5.42523 16.6622V17.8082ZM20.6108 7.42984L15.8355 2.65451L18.1276 0.362351C18.3611 0.107667 18.6582 -0.0143697 19.019 -0.00375782C19.3798 0.00685403 19.6769 0.12889 19.9104 0.362351L20.6108 1.06284C20.8443 1.2963 20.9663 1.59342 20.9663 1.95418C20.9663 2.31493 20.8443 2.61204 20.6108 2.84551L20.6108 7.42984Z" fill="white" />

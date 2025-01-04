@@ -55,6 +55,14 @@
       "thumbnail": "https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
       "category": "Backend"
+    },
+    {
+      "id": "43f8",
+      "title": "SEO",
+      "description": "Se você deseja aumentar a visibilidade do seu site e atrair mais visitantes, o SEO (Search Engine Optimization) é essencial! Neste vídeo, vamos explicar tudo sobre SEO e como você pode aplicá-lo ao seu site ou blog para melhorar o posicionamento nos motores de busca, como o Google.\n\nDescubra os principais pontos do SEO, como:\n\nPesquisa de palavras-chave\nOtimização On-Page (títulos, descrições, conteúdo)\nEstratégias Off-Page (backlinks e autoridade)\nMelhoria da experiência do usuário (UX)\nSEO técnico para um site mais rápido e eficiente\nAlém disso, vamos compartilhar dicas práticas para otimizar seu conteúdo, aumentar o tráfego qualificado e conquistar uma posição de destaque nos resultados orgânicos!",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimarketing.digital%2Fwp-content%2Fuploads%2F2020%2F08%2Ftecnicas-de-seo-3-1717x1024.jpg&f=1&nofb=1&ipt=12e2e3d0af9d1e4fe2dde67c9e8f2b2f026aa7acd9e053409a059a32d3855193&ipo=images",
+      "videoUrl": "https://youtu.be/ZcrM4akZ6Wg?si=8bPBlnxEXZHyf-Po",
+      "category": "Frontend"
     }
   ]
 }

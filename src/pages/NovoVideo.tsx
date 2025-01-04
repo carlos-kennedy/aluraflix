@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import "./NovoVideo.css";
 
 interface Video {
-  id?: number; // Torne o ID opcional
+  id?: number;
   title: string;
   description: string;
   thumbnail: string;
@@ -21,21 +21,18 @@ function NovoVideo() {
 
   const navigate = useNavigate();
 
-  // Função para validar se é uma URL
   const isValidUrl = (url: string): boolean => {
     try {
-      new URL(url); // Tenta criar um objeto URL; se falhar, não é uma URL válida
+      new URL(url);
       return true;
     } catch {
       return false;
     }
   };
 
-  // Função para enviar os dados do novo vídeo via POST
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validação dos campos
     if (!title || !description || !thumbnail || !videoUrl) {
       setError('Todos os campos são obrigatórios!');
       return;
@@ -60,7 +57,6 @@ function NovoVideo() {
     };
 
     try {
-      // Envia a requisição POST para o json-server
       const response = await fetch('http://localhost:3000/videos', {
         method: 'POST',
         headers: {
@@ -73,7 +69,6 @@ function NovoVideo() {
         throw new Error('Erro ao salvar o vídeo.');
       }
 
-      // Redireciona para a página inicial após salvar o vídeo
       navigate('/');
     } catch (error) {
       setError('Ocorreu um erro ao salvar o vídeo.');

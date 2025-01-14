@@ -12,10 +12,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "http://localhost:3001/$1",
-      "headers": {
-        "x-forwarded-host": ["localhost"]
-      }
+      "dest": "http://localhost:3001/$1"
     },
     {
       "src": "/(.*)",

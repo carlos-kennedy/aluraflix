@@ -22,7 +22,7 @@ function HomePage() {
 
   const loadVideos = async () => {
     try {
-      const response = await fetch("http://localhost:3001/videos");
+      const response = await fetch("https://aluraflix-op7xya61f-carloskennedys-projects.vercel.app/api/videos");
       if (!response.ok) {
         throw new Error("Erro ao carregar vídeos");
       }
@@ -57,7 +57,7 @@ function HomePage() {
 
   const handleDelete = async (videoId: number) => {
     try {
-      const response = await fetch(`http://localhost:3001/videos/${videoId}`, {
+      const response = await fetch(`https://aluraflix-op7xya61f-carloskennedys-projects.vercel.app/api/videos/${videoId}`, {
         method: "DELETE",
       });
       if (!response.ok) {
@@ -74,8 +74,9 @@ function HomePage() {
     if (currentVideo) {
       console.log("Tentando salvar o vídeo:", currentVideo);
       try {
+        
         const response = await fetch(
-          `http://localhost:3001/videos/${currentVideo.id}`,
+          `https://aluraflix-op7xya61f-carloskennedys-projects.vercel.app/api/videos/${currentVideo.id}`,
           {
             method: "PUT",
             headers: {

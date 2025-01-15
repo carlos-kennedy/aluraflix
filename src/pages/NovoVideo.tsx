@@ -57,7 +57,7 @@ function NovoVideo() {
     };
 
     try {
-      const response = await fetch('http://localhost:3001/videos', {
+      const response = await fetch('https://aluraflix-op7xya61f-carloskennedys-projects.vercel.app/api/videos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

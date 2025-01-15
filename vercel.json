@@ -7,16 +7,20 @@
       "config": {
         "distDir": "dist"
       }
+    },
+    {
+      "src": "api/json-server.ts",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "http://localhost:3001/$1"
+      "dest": "/api/json-server.ts"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/dist/$1"
     }
   ]
 }

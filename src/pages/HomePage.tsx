@@ -22,7 +22,7 @@ function HomePage() {
 
   const loadVideos = async () => {
     try {
-      const response = await fetch("http://localhost:3000/videos");
+      const response = await fetch("http://localhost:3001/videos");
       if (!response.ok) {
         throw new Error("Erro ao carregar vídeos");
       }
@@ -57,7 +57,7 @@ function HomePage() {
 
   const handleDelete = async (videoId: number) => {
     try {
-      const response = await fetch(`http://localhost:3000/videos/${videoId}`, {
+      const response = await fetch(`http://localhost:3001/videos/${videoId}`, {
         method: "DELETE",
       });
       if (!response.ok) {
@@ -75,7 +75,7 @@ function HomePage() {
       console.log("Tentando salvar o vídeo:", currentVideo);
       try {
         const response = await fetch(
-          `http://localhost:3000/videos/${currentVideo.id}`,
+          `http://localhost:3001/videos/${currentVideo.id}`,
           {
             method: "PUT",
             headers: {

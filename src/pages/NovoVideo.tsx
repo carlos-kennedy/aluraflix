@@ -57,7 +57,7 @@ function NovoVideo() {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/videos', {
+      const response = await fetch('http://localhost:3001/videos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

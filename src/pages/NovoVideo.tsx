@@ -1,151 +1,54 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import "./NovoVideo.css";
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import NovoVideo from './pages/NovoVideo';
+import { Video } from './types/video';
 
-interface Video {
-  id?: number;
-  title: string;
-  description: string;
-  thumbnail: string;
-  videoUrl: string;
-  category: string;
-}
+function App() {
+  const [videos, setVideos] = useState<Video[]>([]);
 
-function NovoVideo() {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [thumbnail, setThumbnail] = useState('');
-  const [videoUrl, setVideoUrl] = useState('');
-  const [category, setCategory] = useState('Frontend');
-  const [error, setError] = useState('');
-
-  const navigate = useNavigate();
-
-  const isValidUrl = (url: string): boolean => {
-    try {
-      new URL(url);
-      return true;
-    } catch {
-      return false;
-    }
-  };
-
-  const handleSave = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!title || !description || !thumbnail || !videoUrl) {
-      setError('Todos os campos são obrigatórios!');
-      return;
-    }
-
-    if (!isValidUrl(thumbnail)) {
-      setError('Por favor, insira um link válido para a imagem.');
-      return;
-    }
-
-    if (!isValidUrl(videoUrl)) {
-      setError('Por favor, insira um link válido para o vídeo.');
-      return;
-    }
-
-    const newVideo: Video = {
-      title,
-      description,
-      thumbnail,
-      videoUrl,
-      category,
+  useEffect(() => {
+    const loadVideos = async () => {
+      try {
+        const response = await fetch('https://aluraflix-dk79.vercel.app/api/videos'); // Alterado para URL de produção
+        if (!response.ok) {
+          throw new Error('Erro ao carregar vídeos');
+        }
+        const data = await response.json();
+        setVideos(data);
+        console.log('Vídeos carregados:', data);
+      } catch (error) {
+        console.error('Erro ao carregar vídeos:', error);
+      }
     };
 
-    try {
-      const response = await fetch('http://localhost:3000/videos', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newVideo),
-      });
+    loadVideos();
+  }, []);
 
-      if (!response.ok) {
-        throw new Error('Erro ao salvar o vídeo.');
-      }
+  const featuredVideos = videos.filter((video) => video.isFeatured);
 
-      navigate('/');
-    } catch (error) {
-      setError('Ocorreu um erro ao salvar o vídeo.');
-    }
-  };
+  const recentVideos = [...videos]
+    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .slice(0, 5);
 
   return (
-    <div className='wrapper-form'>
-      <h2>Novo Vídeo</h2>
-      <p>Preencha o formulário para criar um novo cartão de vídeo.</p>
-      <form onSubmit={handleSave}>
-        <div>
-          <label htmlFor="title">Título:</label>
-          <input
-            placeholder='Título do vídeo'
-            type="text"
-            id="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="category">Categoria:</label>
-          <select
-            id="category"
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-          >
-            <option value="Frontend">Frontend</option>
-            <option value="Backend">Backend</option>
-            <option value="Mobile">Mobile</option>
-          </select>
-        </div>
-
-        <div>
-          <label htmlFor="thumbnail">Imagem:</label>
-          <input
-            placeholder='Link da imagem'
-            type="text"
-            id="thumbnail"
-            value={thumbnail}
-            onChange={(e) => setThumbnail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="videoUrl">Vídeo:</label>
-          <input
-            placeholder='Link do vídeo'
-            type="text"
-            id="videoUrl"
-            value={videoUrl}
-            onChange={(e) => setVideoUrl(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="description">Descrição:</label>
-          <textarea
-            placeholder='Do que se trata o vídeo?'
-            id="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            required
-          />
-        </div>
-
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-
-        <button className='btn-save' type="submit">Salvar Vídeo</button>
-      </form>
-    </div>
+    <Router>
+      <div className="app">
+        <Header featuredVideos={featuredVideos} recentVideos={recentVideos} />
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/novo-video" element={<NovoVideo />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
-export default NovoVideo;
+export default App;

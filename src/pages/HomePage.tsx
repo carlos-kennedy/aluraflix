@@ -22,7 +22,7 @@ function HomePage() {
 
   const loadVideos = async () => {
     try {
-      const response = await fetch("http://localhost:3000/videos");
+      const response = await fetch("https://aluraflix-dk79.vercel.app/api/videos"); // Alterado para URL de produção
       if (!response.ok) {
         throw new Error("Erro ao carregar vídeos");
       }
@@ -57,7 +57,7 @@ function HomePage() {
 
   const handleDelete = async (videoId: number) => {
     try {
-      const response = await fetch(`http://localhost:3000/videos/${videoId}`, {
+      const response = await fetch(`https://aluraflix-dk79.vercel.app/api/videos/${videoId}`, { // Alterado para URL de produção
         method: "DELETE",
       });
       if (!response.ok) {
@@ -75,7 +75,7 @@ function HomePage() {
       console.log("Tentando salvar o vídeo:", currentVideo);
       try {
         const response = await fetch(
-          `http://localhost:3000/videos/${currentVideo.id}`,
+          `https://aluraflix-dk79.vercel.app/api/videos/${currentVideo.id}`, // Alterado para URL de produção
           {
             method: "PUT",
             headers: {

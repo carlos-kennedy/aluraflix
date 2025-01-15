@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const loadVideos = async () => {
       try {
-        const response = await fetch('http://localhost:3000/videos');
+        const response = await fetch('https://aluraflix-dk79.vercel.app/api/videos'); // Alterado para URL de produção
         if (!response.ok) {
           throw new Error('Erro ao carregar vídeos');
         }

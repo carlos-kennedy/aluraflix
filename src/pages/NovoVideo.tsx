@@ -57,8 +57,7 @@ function NovoVideo() {
     };
 
     try {
-      // Substitua a URL abaixo pela URL da sua API no Vercel
-      const response = await fetch('https://aluraflix-mfbfdb4xx-carloskennedys-projects.vercel.app/api/videos', {
+      const response = await fetch('http://localhost:3000/videos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

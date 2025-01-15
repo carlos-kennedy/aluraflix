@@ -1,23 +1,18 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-    "esModuleInterop": true,
-    "declaration": true, // Se precisar de arquivos de declaração
-    "declarationDir": "./types" // Caso precise salvar os arquivos de declaração em um diretório específico
+    "esModuleInterop": true, // Permite importar módulos CommonJS como se fossem ES Modules
+    "target": "ES2020", // Especifica o alvo ECMAScript para a compilação
+    "module": "ESNext", // Permite usar módulos ES
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Bibliotecas para o TypeScript
+    "skipLibCheck": true, // Pula a verificação de tipos nas dependências
+    "moduleResolution": "node", // Resolve módulos de forma compatível com o Node.js
+    "noEmit": false, // Permite gerar arquivos compilados
+    "jsx": "react-jsx", // Para projetos React
+    "strict": true, // Habilita todas as verificações estritas
+    "noUnusedLocals": true, // Garante que não haja variáveis não utilizadas
+    "noUnusedParameters": true, // Garante que não haja parâmetros não utilizados
+    "noFallthroughCasesInSwitch": true, // Garante que não haja cases de switch sem break
+    "noUncheckedSideEffectImports": true // Garante que não haja imports com efeitos colaterais
   },
-  "include": ["src", "api/**/*"]
+  "include": ["src", "api/**/*"] // Inclui o código da API no processo de compilação
 }

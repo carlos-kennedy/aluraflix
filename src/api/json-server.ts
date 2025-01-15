@@ -1,24 +1,22 @@
+import * as jsonServer from 'json-server';
+
 import { NowRequest, NowResponse } from '@vercel/node';
-import fs from 'fs';
-import path from 'path';
+import cors from 'cors';  // Importando o pacote CORS
 
-// Função para ler o db.json e servir como resposta
-const dbFilePath = path.join(__dirname, '../../db.json');
+const server = jsonServer.create();
+const router = jsonServer.router('./db.json'); // Caminho do seu db.json
+const middlewares = jsonServer.defaults();
 
-export default async (req: NowRequest, res: NowResponse) => {
-  try {
-    // Lê o arquivo db.json
-    const db = JSON.parse(fs.readFileSync(dbFilePath, 'utf-8'));
+// Usando o middleware CORS para permitir requisições de qualquer origem
+server.use(cors({
+  origin: '*', // Permite qualquer origem; você pode especificar URLs específicas aqui
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+  allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
+}));
 
-    // Lógica simples para tratar a requisição com base no método HTTP
-    if (req.method === 'GET') {
-      // Retorna todos os dados no db.json
-      res.status(200).json(db);
-    } else {
-      res.status(405).send('Método não permitido');
-    }
-  } catch (error) {
-    console.error('Erro ao ler db.json:', error);
-    res.status(500).send('Erro no servidor');
-  }
+server.use(middlewares);
+server.use(router);
+
+export default (req: NowRequest, res: NowResponse) => {
+  server(req, res); // Passando a requisição e resposta para o servidor
 };

@@ -59,9 +59,8 @@ interface Video {
 
 4. Execute o projeto:
    ```bash
-   npm start
+   npm run dev
    # ou
-   yarn start
    ```
 
 5. Acesse o projeto no navegador em `http://localhost:3000`.
@@ -72,11 +71,10 @@ interface Video {
 ├── src
 │   ├── components
 │   │   └── Categoria.tsx
+|   |   └──Categoria.css
 │   ├── App.tsx
 │   ├── index.tsx
-│   └── styles
-│       └── Categoria.css
-└── package.json
+│   └── package.json
 ```
 
 ## Melhorias Futuras

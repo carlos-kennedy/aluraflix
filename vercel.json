@@ -1,3 +1,16 @@
 {
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/db.js" }]
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/db.js" }],
+  "builds": [
+    {
+      "src": "db.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "vite.config.ts",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ]
 }

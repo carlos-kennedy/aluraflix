@@ -19,19 +19,20 @@ function HomePage() {
   const [videos, setVideos] = useState<Video[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState<Video | null>(null);
-const loadVideos = async () => {
-  try {
-    const response = await fetch("https://aluraflix-dk79.vercel.app/api/videos");
-    if (!response.ok) {
-      throw new Error(`Erro ao carregar vídeos: ${response.statusText}`);
+
+  const loadVideos = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/videos");
+      if (!response.ok) {
+        throw new Error("Erro ao carregar vídeos");
+      }
+      const data = await response.json();
+      setVideos(data);
+      console.log("Vídeos carregados:", data);
+    } catch (error) {
+      console.error("Erro ao carregar vídeos:", error);
     }
-    const data = await response.json();
-    setVideos(data);
-  } catch (error) {
-    console.error("Erro ao carregar vídeos:", error);
-    alert("Ocorreu um erro ao carregar os vídeos. Tente novamente mais tarde.");
-  }
-};
+  };
 
   useEffect(() => {
     loadVideos();
@@ -56,7 +57,7 @@ const loadVideos = async () => {
 
   const handleDelete = async (videoId: number) => {
     try {
-      const response = await fetch(`https://aluraflix-dk79.vercel.app/api/videos/${videoId}`, { // Alterado para URL de produção
+      const response = await fetch(`http://localhost:3000/videos/${videoId}`, {
         method: "DELETE",
       });
       if (!response.ok) {
@@ -74,7 +75,7 @@ const loadVideos = async () => {
       console.log("Tentando salvar o vídeo:", currentVideo);
       try {
         const response = await fetch(
-          `https://aluraflix-dk79.vercel.app/api/videos/${currentVideo.id}`, // Alterado para URL de produção
+          `http://localhost:3000/videos/${currentVideo.id}`,
           {
             method: "PUT",
             headers: {

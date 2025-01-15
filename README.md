@@ -78,7 +78,6 @@ interface Video {
 ```
 
 ## Melhorias Futuras
-
 - Adicionar autenticação para diferentes usuários.
 - Permitir upload de vídeos diretamente pelo sistema.
 - Implementar integração com um banco de dados para persistência de dados.

@@ -11,19 +11,19 @@ function App() {
   const [videos, setVideos] = useState<Video[]>([]);
 
   useEffect(() => {
-const loadVideos = async () => {
-  try {
-    const response = await fetch("https://aluraflix-dk79.vercel.app/api/videos");
-    if (!response.ok) {
-      throw new Error(`Erro ao carregar vídeos: ${response.statusText}`);
-    }
-    const data = await response.json();
-    setVideos(data);
-  } catch (error) {
-    console.error("Erro ao carregar vídeos:", error);
-    alert("Ocorreu um erro ao carregar os vídeos. Tente novamente mais tarde.");
-  }
-};
+    const loadVideos = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/videos'); // Alterado para URL de produção
+        if (!response.ok) {
+          throw new Error('Erro ao carregar vídeos');
+        }
+        const data = await response.json();
+        setVideos(data);
+        console.log('Vídeos carregados:', data);
+      } catch (error) {
+        console.error('Erro ao carregar vídeos:', error);
+      }
+    };
 
     loadVideos();
   }, []);

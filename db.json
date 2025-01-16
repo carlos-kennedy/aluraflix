@@ -1,75 +1,27 @@
 {
   "videos": [
     {
-      "id": "8a33",
-      "title": "Outro Algo",
-      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
-      "thumbnail": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "id": "9fba",
+      "title": "Programador Front-end Iniciante - APRENDA ISSO!",
+      "description": "Neste vídeo, exploraremos um guia completo para quem deseja aprender programação, com ênfase no desenvolvimento front-end para iniciantes. Discutiremos tecnologias fundamentais como HTML, CSS e JavaScript, juntamente com User Experience (UX). Também abordaremos tópicos como Git e GitHub, Tailwind CSS, Bootstrap. Vamos destacar a relevância de cursos de programação, lógica de programação, Material UI, Styled Components, React Native e fornecer dicas para dominar JavaScript, HTML e iniciar a programação do absoluto zero. Prepare-se para se aprofundar em conceitos como aprendizado autodidata, resolução de problemas, estruturação de código, depuração, design responsivo, frameworks CSS, colaboração, versionamento de código, design de interfaces, desenvolvimento mobile, construção de portfólio e oportunidades de carreira. Aproveite esta oportunidade para avançar na sua trajetória de aprendizado em programação!\n",
+      "thumbnail": "https://i.ytimg.com/vi/fX5WCe3d8WU/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAkJDBIN77jfS6JcxA6nPv7eopm8Q",
+      "videoUrl": "https://www.youtube.com/watch?v=fX5WCe3d8WU",
       "category": "Frontend"
     },
     {
-      "id": "e705",
-      "title": "Server",
-      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
-      "thumbnail": "https://plus.unsplash.com/premium_photo-1682146029185-198922bd8350?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
+      "id": "1724",
+      "title": "MANO REAGE: Guia Backend para Iniciantes",
+      "description": "Apoie esse conteudinho TRUE\n",
+      "thumbnail": "https://i.ytimg.com/vi/UeqxyL_C2v0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC1-N492kbQJT8-RzU0XMlPZoKZ-Q",
+      "videoUrl": "https://www.youtube.com/watch?v=UeqxyL_C2v0",
       "category": "Backend"
     },
     {
-      "id": "efc5",
-      "title": "Algo interessante",
-      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
-      "thumbnail": "https://images.unsplash.com/photo-1599950755346-a3e58f84ca63?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
-      "category": "Mobile"
-    },
-    {
-      "id": "2c58",
-      "title": "Inovação",
-      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
-      "thumbnail": "https://images.unsplash.com/photo-1599950755346-a3e58f84ca63?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
-      "category": "Mobile"
-    },
-    {
-      "id": "f93b",
-      "title": "Mobile",
-      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
-      "thumbnail": "https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=We0y0-L5aw0",
-      "category": "Mobile"
-    },
-    {
-      "id": "dfc1",
-      "title": "rose",
-      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
-      "thumbnail": "https://plus.unsplash.com/premium_photo-1674347955758-e37fe3b224c5?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
-      "category": "Frontend"
-    },
-    {
-      "id": "eda4",
-      "title": "Eu sei lá",
-      "description": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma \"Pokedex\"! ",
-      "thumbnail": "https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=XoN3WMpCJfA&t=840s",
-      "category": "Backend"
-    },
-    {
-      "id": "43f8",
-      "title": "SEO",
-      "description": "Se você deseja aumentar a visibilidade do seu site e atrair mais visitantes, o SEO (Search Engine Optimization) é essencial! Neste vídeo, vamos explicar tudo sobre SEO e como você pode aplicá-lo ao seu site ou blog para melhorar o posicionamento nos motores de busca, como o Google.\n\nDescubra os principais pontos do SEO, como:\n\nPesquisa de palavras-chave\nOtimização On-Page (títulos, descrições, conteúdo)\nEstratégias Off-Page (backlinks e autoridade)\nMelhoria da experiência do usuário (UX)\nSEO técnico para um site mais rápido e eficiente\nAlém disso, vamos compartilhar dicas práticas para otimizar seu conteúdo, aumentar o tráfego qualificado e conquistar uma posição de destaque nos resultados orgânicos!",
-      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimarketing.digital%2Fwp-content%2Fuploads%2F2020%2F08%2Ftecnicas-de-seo-3-1717x1024.jpg&f=1&nofb=1&ipt=12e2e3d0af9d1e4fe2dde67c9e8f2b2f026aa7acd9e053409a059a32d3855193&ipo=images",
-      "videoUrl": "https://youtu.be/ZcrM4akZ6Wg?si=8bPBlnxEXZHyf-Po",
-      "category": "Frontend"
-    },
-    {
-      "id": "837b",
-      "title": "IPHONE",
-      "description": "E um iphone :D",
-      "thumbnail": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "videoUrl": "https://www.youtube.com/watch?v=-jnjBmwU84U",
+      "id": "ff79",
+      "title": "Building a Mobile App in 2025: The BEST Technologies",
+      "description": "In this video, we dive deep into the top technologies for building mobile apps in 2025 📲\n",
+      "thumbnail": "https://i.ytimg.com/vi/NMb4RDpbRXs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC87SC9uw76E4MPI_Y0OGXz4V8FOg",
+      "videoUrl": "https://www.youtube.com/watch?v=NMb4RDpbRXs",
       "category": "Mobile"
     }
   ]

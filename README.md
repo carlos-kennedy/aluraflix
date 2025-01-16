@@ -61,9 +61,10 @@ interface Video {
    ```bash
    npm run dev
    # ou
+   yarn dev
    ```
 
-5. Acesse o projeto no navegador em `http://localhost:3000`.
+5. Acesse o projeto no navegador em `http://localhost:5173/`.
 
 ## Estrutura de Pastas
 
@@ -76,13 +77,6 @@ interface Video {
 │   ├── index.tsx
 │   └── package.json
 ```
-
-## Melhorias Futuras
-- Adicionar autenticação para diferentes usuários.
-- Permitir upload de vídeos diretamente pelo sistema.
-- Implementar integração com um banco de dados para persistência de dados.
-- Melhorar o design da interface com frameworks como TailwindCSS ou Material-UI.
-
 ## Contribuição
 
 Contribuições são bem-vindas! Siga os passos abaixo:
@@ -95,4 +89,6 @@ Contribuições são bem-vindas! Siga os passos abaixo:
 
 ---
 
-Desenvolvido com 💻 e ☕ por Carlos.
+Desenvolvido com <img src="https://em-content.zobj.net/source/microsoft-teams/363/red-heart_2764-fe0f.png" width="15rem" /> e <img src="https://em-content.zobj.net/source/microsoft-teams/363/hot-beverage_2615.png" width="15rem" /> por Carlos.
+
+
